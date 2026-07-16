@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#05070d">
+  <title>FOTO KITA BLUR | Kamera Blur Otomatis</title>
+  <meta name="description" content="FOTO KITA BLUR adalah kamera otomatis yang memburamkan layar saat tangan membentuk isyarat peace. Cocok untuk foto, video, dan penggunaan santai di ponsel maupun desktop.">
+  <meta name="keywords" content="foto kita blur, kamera blur otomatis, blur kamera, isyarat peace, dua jari, filter blur, kamera otomatis blur">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="CodeBoost Creative">
+  <meta name="application-name" content="FOTO KITA BLUR">
+  <meta name="apple-mobile-web-app-title" content="FOTO KITA BLUR">
+  <meta name="format-detection" content="telephone=no,email=no,address=no">
+  <link rel="canonical" href="https://blur.codeboost.my.id">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2314b8a6'/%3E%3Cstop offset='100%25' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%2305070d'/%3E%3Crect x='12' y='18' width='40' height='28' rx='8' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%2305070d' stroke='%23ffffff' stroke-width='3'/%3E%3Cpath d='M21 18l3-6h16l3 6' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%2314b8a6'/%3E%3Cstop offset='100%25' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='%2305070d'/%3E%3Crect x='12' y='18' width='40' height='28' rx='8' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='32' r='9' fill='%2305070d' stroke='%23ffffff' stroke-width='3'/%3E%3Cpath d='M21 18l3-6h16l3 6' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:site_name" content="FOTO KITA BLUR">
+  <meta property="og:title" content="FOTO KITA BLUR | Kamera Blur Otomatis">
+  <meta property="og:description" content="Saat tangan membentuk isyarat peace, layar langsung diburamkan. Ringan, responsif, dan cocok untuk ponsel maupun desktop.">
+  <meta property="og:url" content="https://blur.codeboost.my.id">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FOTO KITA BLUR | Kamera Blur Otomatis">
+  <meta name="twitter:description" content="Saat tangan membentuk isyarat peace, layar langsung diburamkan. Ringan, responsif, dan cocok untuk ponsel maupun desktop.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FOTO KITA BLUR",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Web",
+    "description": "Kamera otomatis untuk memburamkan layar saat isyarat peace terdeteksi.",
+    "url": "https://blur.codeboost.my.id",
+    "author": {
+      "@type": "Organization",
+      "name": "CodeBoost Creative",
+      "url": "https://blur.codeboost.my.id"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IDR"
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"]
+          },
+          boxShadow: {
+            glow: "0 24px 80px rgba(45, 212, 191, 0.18)"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html,
+    body {
+      min-height: 100%;
+      overflow: hidden;
+      background: #05070d;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      text-rendering: geometricPrecision;
+    }
+
+    .aurora {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(20, 184, 166, 0.2), transparent 28%),
+        radial-gradient(circle at 88% 18%, rgba(59, 130, 246, 0.2), transparent 24%),
+        radial-gradient(circle at 50% 95%, rgba(244, 114, 182, 0.14), transparent 30%),
+        linear-gradient(135deg, #05070d 0%, #0b1020 46%, #05070d 100%);
+    }
+
+    .glass {
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.05));
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+    }
+
+    .safe-area {
+      padding-top: max(1rem, env(safe-area-inset-top));
+      padding-right: max(1rem, env(safe-area-inset-right));
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
+      padding-left: max(1rem, env(safe-area-inset-left));
+    }
+
+    .video-mirror {
+      transform: scaleX(-1);
+    }
+
+    #blurOverlay {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+  </style>
+</head>
+<body class="font-sans text-white">
+  <main id="permissionPage" class="aurora relative flex min-h-screen items-center justify-center overflow-hidden safe-area">
+    <section class="glass w-full max-w-xl rounded-[2rem] p-6 text-center shadow-glow sm:p-10">
+      <div class="mx-auto mb-7 flex h-20 w-20 items-center justify-center rounded-3xl border border-white/15 bg-white/10 text-4xl shadow-2xl">📷</div>
+      <p class="mb-3 text-sm font-medium uppercase tracking-[0.28em] text-teal-200/80">Kamera Otomatis</p>
+      <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-6xl">FOTO KITA BLUR</h1>
+      <p class="mx-auto mt-5 max-w-md text-base leading-7 text-slate-300 sm:text-lg">Izinkan akses kamera untuk memburamkan layar otomatis saat isyarat peace terdeteksi.</p>
+      <button id="startButton" type="button" class="mt-9 inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-base font-semibold text-slate-950 shadow-2xl shadow-teal-950/40 transition duration-300 hover:-translate-y-0.5 hover:bg-teal-100 focus:outline-none focus:ring-4 focus:ring-teal-300/40 active:translate-y-0 sm:w-auto sm:min-w-64">
+        <span class="text-xl">▶</span>
+        <span data-label>Aktifkan Kamera</span>
+      </button>
+      <p class="mt-8 text-xs font-medium tracking-[0.22em] text-white/65">powered by <a href="https://codeboost.my.id" target="_blank" rel="noreferrer noopener" class="text-teal-200 underline decoration-teal-200/40 underline-offset-4 transition hover:text-teal-100">codeboost creative</a></p>
+    </section>
+  </main>
+
+  <section id="cameraPage" class="hidden fixed inset-0 overflow-hidden bg-black">
+    <video id="inputVideo" class="video-mirror h-full w-full object-cover" autoplay muted playsinline></video>
+
+    <div class="pointer-events-none fixed left-0 top-0 z-20 safe-area">
+      <div id="statusCard" class="glass rounded-2xl px-4 py-3 text-sm font-medium text-white shadow-2xl transition duration-300 sm:text-base">🔍 Memeriksa isyarat...</div>
+    </div>
+
+    <div id="blurOverlay" class="pointer-events-none fixed inset-0 z-10 flex items-center justify-center bg-slate-950/18 px-6 opacity-0 transition-all duration-500 ease-in-out"></div>
+
+    <div class="pointer-events-none fixed bottom-0 left-0 z-20 safe-area">
+      <p class="glass rounded-full px-3 py-2 text-[11px] font-medium tracking-[0.18em] text-white/80 sm:text-xs">powered by <a href="https://codeboost.my.id" target="_blank" rel="noreferrer noopener" class="text-teal-200 underline decoration-teal-200/40 underline-offset-4 transition hover:text-teal-100">codeboost creative</a></p>
+    </div>
+  </section>
+
+  <div id="errorPage" class="aurora fixed inset-0 hidden items-center justify-center safe-area">
+    <section class="glass w-full max-w-lg rounded-[2rem] p-6 text-center sm:p-9">
+      <div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-3xl border border-red-300/20 bg-red-400/10 text-3xl">❌</div>
+      <h2 id="errorTitle" class="text-2xl font-semibold tracking-tight">Kamera tidak diizinkan</h2>
+      <p id="errorMessage" class="mt-4 text-base leading-7 text-slate-300">Silakan izinkan akses kamera melalui browser untuk menggunakan aplikasi ini.</p>
+      <button id="retryButton" type="button" class="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-base font-semibold text-slate-950 shadow-2xl transition duration-300 hover:-translate-y-0.5 hover:bg-teal-100 focus:outline-none focus:ring-4 focus:ring-teal-300/40 active:translate-y-0 sm:w-auto sm:min-w-48">
+        <span>↻</span>
+        <span data-label>Coba Lagi</span>
+      </button>
+    </section>
+  </div>
+
+  <script type="module">
+    import { FilesetResolver, HandLandmarker } from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.mjs";
+
+    const elements = {
+      permissionPage: document.getElementById("permissionPage"),
+      cameraPage: document.getElementById("cameraPage"),
+      errorPage: document.getElementById("errorPage"),
+      startButton: document.getElementById("startButton"),
+      retryButton: document.getElementById("retryButton"),
+      video: document.getElementById("inputVideo"),
+      statusCard: document.getElementById("statusCard"),
+      blurOverlay: document.getElementById("blurOverlay"),
+      errorTitle: document.getElementById("errorTitle"),
+      errorMessage: document.getElementById("errorMessage")
+    };
+
+    const state = {
+      handLandmarker: null,
+      mediaStream: null,
+      animationFrameId: null,
+      lastVideoTime: -1,
+      lastDetectAt: 0,
+      peaceStartedAt: null,
+      isBlurred: false,
+      isRunning: false,
+      delegate: "CPU"
+    };
+
+    const PEACE_HOLD_MS = 100;
+    const DETECTION_INTERVAL_MS = 33;
+    const MODEL_URL = "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task";
+    const FINGER_TIPS = { index: 8, middle: 12, ring: 16, pinky: 20 };
+    const FINGER_PIPS = { index: 6, middle: 10, ring: 14, pinky: 18 };
+
+    elements.startButton.addEventListener("click", initCamera);
+    elements.retryButton.addEventListener("click", initCamera);
+    window.addEventListener("pagehide", stopCamera);
+
+    function showPermissionPage() {
+      elements.permissionPage.classList.remove("hidden");
+      elements.cameraPage.classList.add("hidden");
+      elements.errorPage.classList.add("hidden");
+      elements.errorPage.classList.remove("flex");
+      updateStatus("🔍 Memeriksa isyarat...");
+    }
+
+    function showCameraPage() {
+      elements.permissionPage.classList.add("hidden");
+      elements.errorPage.classList.add("hidden");
+      elements.errorPage.classList.remove("flex");
+      elements.cameraPage.classList.remove("hidden");
+      updateStatus(state.delegate === "GPU" ? "🟢 Kamera Aktif" : "🟢 Kamera Aktif");
+    }
+
+    function showError(error) {
+      stopCamera();
+      const normalized = normalizeCameraError(error);
+      elements.errorTitle.textContent = normalized.title;
+      elements.errorMessage.textContent = normalized.message;
+      elements.permissionPage.classList.add("hidden");
+      elements.cameraPage.classList.add("hidden");
+      elements.errorPage.classList.remove("hidden");
+      elements.errorPage.classList.add("flex");
+    }
+
+    async function initCamera() {
+      try {
+        setButtonLoading(true);
+        hideBlur();
+        updateStatus("🔍 Memeriksa isyarat...");
+
+        if (!window.isSecureContext) throw new Error("INSECURE_CONTEXT");
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) throw new Error("CAMERA_UNSUPPORTED");
+
+        const stream = await initCameraStream();
+        state.mediaStream = stream;
+        elements.video.srcObject = stream;
+        await waitForVideoReady();
+        await elements.video.play();
+        await initMediaPipe();
+
+        showCameraPage();
+        state.isRunning = true;
+        detectHands();
+      } catch (error) {
+        showError(error);
+      } finally {
+        setButtonLoading(false);
+      }
+    }
+
+    async function initMediaPipe() {
+      if (state.handLandmarker) return;
+      try {
+        const vision = await FilesetResolver.forVisionTasks("https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm");
+        for (const delegate of ["GPU", "CPU"]) {
+          try {
+            state.handLandmarker = await HandLandmarker.createFromOptions(vision, {
+              baseOptions: { modelAssetPath: MODEL_URL, delegate },
+              runningMode: "VIDEO",
+              numHands: 2,
+              minHandDetectionConfidence: 0.55,
+              minHandPresenceConfidence: 0.55,
+              minTrackingConfidence: 0.5
+            });
+            state.delegate = delegate;
+            return;
+          } catch (delegateError) {
+            if (delegate === "CPU") throw delegateError;
+          }
+        }
+      } catch (error) {
+        throw new Error("MEDIAPIPE_LOAD_FAILED", { cause: error });
+      }
+    }
+
+    async function initCameraStream() {
+      const attempts = [
+        { audio: false, video: { facingMode: { ideal: "user" }, width: { ideal: 1280 }, height: { ideal: 720 }, frameRate: { ideal: 30, max: 60 } } },
+        { audio: false, video: { width: { ideal: 1280 }, height: { ideal: 720 }, frameRate: { ideal: 30, max: 60 } } },
+        { audio: false, video: true }
+      ];
+      let lastError = null;
+      for (const constraints of attempts) {
+        try {
+          return await navigator.mediaDevices.getUserMedia(constraints);
+        } catch (error) {
+          lastError = error;
+        }
+      }
+      throw lastError || new Error("CAMERA_FAILED");
+    }
+
+    function detectHands() {
+      if (!state.isRunning || !state.handLandmarker || elements.video.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) {
+        state.animationFrameId = requestAnimationFrame(detectHands);
+        return;
+      }
+      const video = elements.video;
+      const now = performance.now();
+      if (video.currentTime !== state.lastVideoTime && now - state.lastDetectAt >= DETECTION_INTERVAL_MS) {
+        const results = state.handLandmarker.detectForVideo(video, now);
+        const hasHands = Boolean(results.landmarks && results.landmarks.length);
+        const peaceVisible = hasHands && results.landmarks.some(isPeaceGesture);
+        updateGestureState(peaceVisible, hasHands);
+        state.lastVideoTime = video.currentTime;
+        state.lastDetectAt = now;
+      }
+      state.animationFrameId = requestAnimationFrame(detectHands);
+    }
+
+    function isPeaceGesture(landmarks) {
+      const indexOpen = isFingerOpen(landmarks, FINGER_TIPS.index, FINGER_PIPS.index);
+      const middleOpen = isFingerOpen(landmarks, FINGER_TIPS.middle, FINGER_PIPS.middle);
+      const ringClosed = isFingerClosed(landmarks, FINGER_TIPS.ring, FINGER_PIPS.ring);
+      const pinkyClosed = isFingerClosed(landmarks, FINGER_TIPS.pinky, FINGER_PIPS.pinky);
+      return indexOpen && middleOpen && ringClosed && pinkyClosed;
+    }
+
+    function isFingerOpen(landmarks, tipIndex, pipIndex) {
+      return landmarks[tipIndex].y < landmarks[pipIndex].y - 0.025;
+    }
+
+    function isFingerClosed(landmarks, tipIndex, pipIndex) {
+      return landmarks[tipIndex].y > landmarks[pipIndex].y - 0.005;
+    }
+
+    function updateGestureState(peaceVisible, hasHands) {
+      const now = performance.now();
+      if (peaceVisible) {
+        state.peaceStartedAt ??= now;
+        if (now - state.peaceStartedAt >= PEACE_HOLD_MS) {
+          showBlur();
+          updateStatus("✌️ Peace Terdeteksi");
+        } else {
+          updateStatus("🔍 Memeriksa isyarat...");
+        }
+        return;
+      }
+      state.peaceStartedAt = null;
+      hideBlur();
+      updateStatus(hasHands ? "🔍 Memeriksa isyarat..." : state.delegate === "GPU" ? "🟢 Kamera Aktif" : "🟢 Kamera Aktif");
+    }
+
+    function showBlur() {
+      if (state.isBlurred) return;
+      state.isBlurred = true;
+      elements.blurOverlay.classList.remove("pointer-events-none", "opacity-0");
+      elements.blurOverlay.classList.add("opacity-100");
+    }
+
+    function hideBlur() {
+      if (!state.isBlurred && elements.blurOverlay.classList.contains("opacity-0")) return;
+      state.isBlurred = false;
+      elements.blurOverlay.classList.add("pointer-events-none", "opacity-0");
+      elements.blurOverlay.classList.remove("opacity-100");
+    }
+
+    function updateStatus(message) {
+      if (elements.statusCard.textContent !== message) elements.statusCard.textContent = message;
+    }
+
+    function waitForVideoReady() {
+      if (elements.video.readyState >= HTMLMediaElement.HAVE_METADATA) return Promise.resolve();
+      return new Promise((resolve, reject) => {
+        const timeout = window.setTimeout(() => reject(new Error("CAMERA_TIMEOUT")), 8000);
+        elements.video.onloadedmetadata = () => {
+          window.clearTimeout(timeout);
+          resolve();
+        };
+      });
+    }
+
+    function setButtonLoading(isLoading) {
+      [elements.startButton, elements.retryButton].forEach((button) => {
+        button.disabled = isLoading;
+        button.classList.toggle("cursor-wait", isLoading);
+        button.classList.toggle("opacity-70", isLoading);
+      });
+      elements.startButton.querySelector("[data-label]").textContent = isLoading ? "Menyiapkan..." : "Aktifkan Kamera";
+      elements.retryButton.querySelector("[data-label]").textContent = isLoading ? "Menyiapkan..." : "Coba Lagi";
+    }
+
+    function stopCamera() {
+      state.isRunning = false;
+      state.peaceStartedAt = null;
+      state.lastVideoTime = -1;
+      state.lastDetectAt = 0;
+      if (state.animationFrameId) {
+        cancelAnimationFrame(state.animationFrameId);
+        state.animationFrameId = null;
+      }
+      if (state.mediaStream) {
+        state.mediaStream.getTracks().forEach((track) => track.stop());
+        state.mediaStream = null;
+      }
+      elements.video.srcObject = null;
+      hideBlur();
+    }
+
+    function normalizeCameraError(error) {
+      const name = error?.name || error?.message || "UnknownError";
+      if (name === "INSECURE_CONTEXT") return { title: "Koneksi belum aman", message: "Browser mobile hanya mengizinkan kamera dari HTTPS atau localhost. Jalankan lewat HTTPS agar kamera bisa dibuka di ponsel." };
+      if (name === "CAMERA_UNSUPPORTED") return { title: "Browser tidak mendukung kamera", message: "Gunakan browser modern seperti Chrome, Edge, atau Safari terbaru dengan koneksi HTTPS atau localhost." };
+      if (name === "MEDIAPIPE_LOAD_FAILED") return { title: "MediaPipe gagal dimuat", message: "Pastikan koneksi internet aktif dan CDN MediaPipe tidak diblokir, lalu coba lagi." };
+      if (name === "NotAllowedError" || name === "PermissionDeniedError") return { title: "Kamera tidak diizinkan", message: "Silakan izinkan akses kamera melalui browser untuk menggunakan aplikasi ini." };
+      if (name === "NotFoundError" || name === "DevicesNotFoundError") return { title: "Kamera tidak ditemukan", message: "Hubungkan kamera atau pastikan kamera perangkat tersedia, lalu coba lagi." };
+      if (name === "NotReadableError" || name === "TrackStartError") return { title: "Kamera sedang digunakan", message: "Tutup aplikasi lain yang memakai kamera atau periksa izin sistem, lalu coba lagi." };
+      if (name === "OverconstrainedError" || name === "ConstraintNotSatisfiedError") return { title: "Kamera tidak kompatibel", message: "Perangkat tidak memenuhi konfigurasi kamera yang diminta. Coba gunakan kamera atau browser lain." };
+      if (name === "CAMERA_TIMEOUT") return { title: "Kamera terlalu lama merespons", message: "Muat ulang halaman atau periksa apakah kamera sedang aktif di aplikasi lain." };
+      return { title: "Kamera gagal dimulai", message: "Terjadi kesalahan saat membuka kamera. Periksa izin browser, koneksi perangkat, lalu coba lagi." };
+    }
+
+    showPermissionPage();
+  </script>
+</body>
+</html>
