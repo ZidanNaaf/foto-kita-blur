@@ -20,7 +20,7 @@
 | Fitur | Deskripsi |
 |---|---|
 | Landing page | Tampilan awal modern sebelum kamera dibuka |
-| Blur otomatis | Layar diburamkan saat isyarat damai terdeteksi |
+| Blur otomatis | Layar diburamkan saat isyarat peace terdeteksi |
 | Transisi halus | Animasi blur yang smooth dan cepat |
 | Mobile friendly | Nyaman dipakai di ponsel maupun desktop |
 | SEO ready | Meta, favicon, sitemap, dan robots sudah ada |
@@ -31,7 +31,7 @@
 1. Buka website di `https://blur.codeboost.my.id`
 2. Tekan **Aktifkan Kamera**
 3. Izinkan akses kamera di browser
-4. Tunjukkan isyarat damai dengan dua jari
+4. Tunjukkan isyarat peace dengan dua jari
 5. Layar akan diburamkan otomatis
 
 ## Struktur File
