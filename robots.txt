@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blur.codeboost.my.id/sitemap.xml
