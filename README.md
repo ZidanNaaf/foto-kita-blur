@@ -1,6 +1,6 @@
 # FOTO KITA BLUR
 
-> Kamera otomatis yang memburamkan layar saat isyarat damai terdeteksi.
+> Kamera otomatis yang memburamkan layar saat isyarat peace terdeteksi.
 
 [![Website](https://img.shields.io/badge/Live-blur.codeboost.my.id-14b8a6?style=for-the-badge)](https://blur.codeboost.my.id)
 [![GitHub](https://img.shields.io/badge/GitHub-zidannaaf-111827?style=for-the-badge&logo=github)](https://github.com/zidannaaf)
