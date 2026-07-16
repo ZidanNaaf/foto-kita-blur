@@ -53,4 +53,5 @@
 ## Author
 
 - GitHub: https://github.com/zidannaaf
+- Live Project: https://blur.codeboost.my.id
 - Website: https://codeboost.my.id
